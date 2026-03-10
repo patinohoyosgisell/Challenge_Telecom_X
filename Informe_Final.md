@@ -17,7 +17,7 @@ Los datos fueron importados desde el repositorio del challenge y cargados en un 
 
 Estandarización de nombres de columnas
 
-Se renombraron las columnas al español con el objetivo de facilitar la interpretación del dataset. Algunos ejemplos:
+Se renombraron las columnas al español con el objetivo de facilitar la interpretación del dataset.
 
 Nombre original	Nuevo nombre
 customerID	id_cliente
@@ -37,61 +37,17 @@ Esto facilita el análisis estadístico y permite calcular correlaciones entre v
 
 Identificación de valores faltantes
 
-Durante el proceso se detectaron 224 valores vacíos en la variable cancelación, los cuales fueron tratados para mantener la consistencia del dataset.
+Durante el proceso se detectaron 224 valores vacíos en la variable cancelacion, los cuales fueron analizados para mantener la consistencia del dataset.
 
 Creación de nuevas variables
 
 Se creó la variable cuentas_diarias, calculada a partir de los cargos mensuales:
 
-𝑐
-𝑢
-𝑒
-𝑛
-𝑡
-𝑎
-𝑠
-_
-𝑑
-𝑖
-𝑎
-𝑟
-𝑖
-𝑎
-𝑠
-=
-𝑐
-𝑢
-𝑒
-𝑛
-𝑡
-𝑎
-.
-𝑐
-𝑎
-𝑟
-𝑔
-𝑜
-𝑠
-_
-𝑚
-𝑒
-𝑛
-𝑠
-𝑢
-𝑎
-𝑙
-𝑒
-𝑠
-30
-cuentas_diarias=
-30
-cuenta.cargos_mensuales
-	​
-
+cuentas_diarias = cuenta.cargos_mensuales / 30
 
 Esta variable permite analizar el gasto de los clientes con mayor nivel de detalle.
 
-3. Análisis Exploratorio de Datos (EDA)
+3. Análisis Exploratorio de Datos
 
 Se realizó un análisis exploratorio para identificar patrones y relaciones entre las variables y la cancelación de clientes.
 
@@ -139,16 +95,6 @@ Cargos totales
 
 Los clientes que permanecen activos tienen mayores cargos totales acumulados, lo cual es consistente con una mayor permanencia en la empresa.
 
-Análisis de correlación
-
-Se realizó una matriz de correlación entre las variables numéricas para identificar relaciones relevantes con la cancelación.
-
-Los resultados muestran que:
-
-La antigüedad del cliente tiene correlación negativa con la cancelación, lo que significa que los clientes más antiguos tienen menor probabilidad de abandonar el servicio.
-
-Los cargos mensuales presentan una correlación positiva con la evasión, indicando que precios más altos pueden aumentar el riesgo de cancelación.
-
 4. Conclusiones e Insights
 
 A partir del análisis exploratorio se identificaron varios factores asociados con la evasión de clientes.
@@ -167,7 +113,7 @@ Estos resultados permiten comprender mejor el comportamiento de los clientes y d
 
 5. Recomendaciones Estratégicas
 
-Con base en los hallazgos del análisis, se proponen las siguientes estrategias para reducir la evasión de clientes:
+Con base en los hallazgos del análisis, se proponen las siguientes estrategias para reducir la evasión de clientes.
 
 Incentivar contratos de largo plazo
 
