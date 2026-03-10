@@ -35,11 +35,11 @@ Google Colab
 
 📂 Estructura del Repositorio
 Challenge_Telecom_X
-│
-├── Challenge_Telecom_XV1.ipynb   # Notebook con el análisis completo
-├── Informe_Final.md              # Informe con conclusiones del análisis
-├── README.md                     # Descripción del proyecto
-└── datos/                        # Dataset utilizado en el análisis
+Challenge_Telecom_XV1.ipynb   # Notebook con el análisis completo
+Informe_Final.md              # Informe con conclusiones del análisis
+README.md                     # Descripción del proyecto
+datos/                        # Dataset utilizado en el análisis
+
 🔎 Análisis Realizado
 
 Durante el análisis se realizaron las siguientes etapas:
